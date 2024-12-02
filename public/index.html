@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Carros</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Adicionar Novo Carro</h2>
+            <form id="createCarroForm">
+                <div class="form-group">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" id="modelo" name="modelo" required>
+                </div>
+                <div class="form-group">
+                    <label for="marca">Marca</label>
+                    <input type="text" id="marca" name="marca">
+                </div>
+                <div class="form-group">
+                    <label for="ano">Ano</label>
+                    <input type="number" id="ano" name="ano">
+                </div>
+                <div class="form-group">
+                    <label for="cor">Cor</label>
+                    <input type="text" id="cor" name="cor">
+                </div>
+                <div class="form-group">
+                    <label for="numeroPortas">Número de Portas</label>
+                    <input type="number" id="numeroPortas" name="numeroPortas">
+                </div>
+                <div class="form-group">
+                    <label for="quilometragem">Quilometragem</label>
+                    <input type="number" id="quilometragem" name="quilometragem">
+                </div>
+                <button type="submit">Adicionar Carro</button>
+            </form>
+        </section>
+
+        <section class="list-section">
+            <h2>Lista de Carros Cadastrados</h2>
+            <ul id="carroList">
+                <!-- A lista será populada dinamicamente -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
